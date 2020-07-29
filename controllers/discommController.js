@@ -1,5 +1,5 @@
 import mongoose from 'mongoose'; 
-import server from '../models/notebookModel.js';
+import server from '../models/discommModel.js';
 
 exports.getServer = (req, res) => {
     note.findById(req.params.serverId, (err, server) => {

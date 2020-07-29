@@ -1,9 +1,9 @@
-import notebook from '../controllers/notebookController';
+import server from '../controllers/discommController';
 
 export default (app) => {
     app.route('/servers')
-        .post(notebook.createSerever);
+        .post(server.createServer);
 
     app.route('/servers/:serverId')
-        .get(notebook.getServer)
+        .get(server.getServer)
 };
